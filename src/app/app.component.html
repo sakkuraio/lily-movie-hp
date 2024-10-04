@@ -1,1 +1,12 @@
-<div>りりないってらっしゃい！</div>
+<img class="page-title" src="assets/images/title.png" alt="title" />
+<app-top-images></app-top-images>
+<div class="movie-card-area">
+  <app-movie-card
+    *ngFor="let message of messageInformationList"
+    [title]="message.title"
+    [imagePath]="message.imagePath"
+    [videoPath]="message.videoPath"
+    [videoCreatorName]="message.videoCreatorName"
+    [message]="message.text"
+  ></app-movie-card>
+</div>

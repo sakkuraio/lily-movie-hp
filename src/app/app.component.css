@@ -1,0 +1,29 @@
+/* app.component.css */
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #d5f1e8; /* 背景色の設定 */
+  background-size: cover; /* 画像をカバーする */
+  background-position: center; /* 画像の中央寄せ */
+  background-repeat: no-repeat; /* 画像の繰り返しをしない */
+}
+
+.page-title {
+  /* background-color: #5223f8; 背景色 */
+  color: rgb(63, 49, 250); /* 文字色 */
+  padding: 0px; /* 内側の余白 */
+  text-align: center; /* 中央揃え */
+  margin: 0; /* 外側の余白をリセット */
+  margin-bottom: -30px;
+  margin-top: -10px;
+  margin-left: -20px;
+  font-size: 2.5em; /* フォントサイズの調整 */
+  /* border-radius: 8px; 角の丸み */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 影の効果 */
+  height: 100px;
+}
+
+.movie-card-area {
+  display: flex;
+}

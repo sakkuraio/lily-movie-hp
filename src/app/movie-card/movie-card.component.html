@@ -1,0 +1,24 @@
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <!-- <div mat-card-avatar class="example-header-image"></div> -->
+    <mat-card-title>{{ title }}</mat-card-title>
+    <mat-card-subtitle>From {{ videoCreatorName }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="imagePath"
+    alt="Photo of a Shiba Inu"
+    (click)="oprnMoovie()"
+  />
+  <mat-card-content [innerHTML]="getFormattedText()"> </mat-card-content>
+</mat-card>
+
+<div *ngIf="isModalOpen" id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <video #videoPlayer controls>
+      <source [src]="videoPath" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
