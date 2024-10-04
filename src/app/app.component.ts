@@ -24,7 +24,7 @@ export class AppComponent {
       imagePath: 'assets/images/thumbnail_24_9.jpg',
       videoPath: 'assets/videos/movie_24_9.mp4',
       videoCreatorName: 'Amber',
-      text: `行ってらっしゃい！🛫
+      text: `行ってらっしゃい🛫
       キュンです🫶`,
     },
     {
